@@ -14,6 +14,13 @@ class Node:
         return head
 
     @staticmethod
+    def test_list_1():
+        a = Node(1)
+        b = Node(2,a)
+        c = Node(3,b)
+        return c
+
+    @staticmethod
     def print_list(z):
         while z:
             print(z.val)
