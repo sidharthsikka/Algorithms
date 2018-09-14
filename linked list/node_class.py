@@ -1,8 +1,9 @@
 class Node:
-    def __init__(self, val, next=None, random=None):
+    def __init__(self, val, next=None, random=None, previous=None):
         self.next = next
         self.val = val
         self.random = random
+        self.previous = previous
 
     @staticmethod
     def test_list():

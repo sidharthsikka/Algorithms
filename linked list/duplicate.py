@@ -20,3 +20,20 @@ def duplicate(head):
             old_to_new[temp].random = old_to_new[temp.random]
         temp = temp.next
     return result
+
+def duplicate_1(head):
+    dic = dict()
+    dic[None] = None
+    p = head
+        
+    while p:
+        dic[p] = Node(p.val)
+        p = p.next
+        
+        p = head
+        while p:
+            dic[p].next = dic[p.next]
+            dic[p].random = dic[p.random]
+            p = p.next
+            
+    return dic[head]
