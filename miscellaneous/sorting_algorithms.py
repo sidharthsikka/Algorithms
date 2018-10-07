@@ -61,13 +61,7 @@ def quick_sort(arr, start, end):
         quick_sort(arr, pivot_index + 1, end)
     return arr
 
-def radix_sort(arr):
-    return
-
-def bubble_sort(arr):
-    return
-
-def heapsort(arr):
+def heap_sort(arr):
     return
 
 def main():
