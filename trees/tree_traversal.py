@@ -1,6 +1,5 @@
 from node_class import Node
 
-# Recursive
 def inorder_recursive(root):
     result = []
     def rec(node):
@@ -11,7 +10,26 @@ def inorder_recursive(root):
     rec(root)
     return result
 
-# Iterative
+def postorder_recursive(root):
+    result = []
+    def rec(node):
+        if node:
+            rec(node.left)
+            rec(node.right)
+            result.append(node.val)
+    rec(root)
+    return result
+
+def preorder_recursive(root):
+    result = []
+    def rec(node):
+        if node:
+            result.append(node.val)
+            rec(node.left)
+            rec(node.right)
+    rec(root)
+    return result
+
 def inorder_iterative(root):
     if not root:
         return []

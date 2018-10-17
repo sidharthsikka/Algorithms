@@ -48,7 +48,7 @@ def combination_sum_paths_three(set, target, k):
     set.sort()
 
     def dfs(sum, i, curr):
-        if len(curr > k):
+        if len(curr) > k:
             return
         if sum == 0 and curr not in result:
             result.append(curr)

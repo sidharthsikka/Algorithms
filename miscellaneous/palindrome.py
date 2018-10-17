@@ -1,4 +1,4 @@
-def palindrome(line):
+def palindrome(s):
     def isAlpha(c):
         if 'a' <= c and c <= 'z' or '0' <= c and c <= '9':
             return True

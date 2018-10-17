@@ -30,10 +30,10 @@ def duplicate_1(head):
         dic[p] = Node(p.val)
         p = p.next
         
-        p = head
-        while p:
-            dic[p].next = dic[p.next]
-            dic[p].random = dic[p.random]
-            p = p.next
+    p = head
+    while p:
+        dic[p].next = dic[p.next]
+        dic[p].random = dic[p.random]
+        p = p.next
             
     return dic[head]
