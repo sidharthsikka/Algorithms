@@ -38,8 +38,7 @@ def inorder_iterative(root):
     stack.append(root)
     backup = False
 
-    while stack:
-        print([str(node.val) for node in stack])   
+    while stack:  
         head = stack[-1]
         if head.left and not backup:
             stack.append(head.left)
